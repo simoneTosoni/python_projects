@@ -47,7 +47,7 @@ def visualize(
 
 if __name__ == '__main__':
 
-    base_options = python.BaseOptions(model_asset_path='/home/simone/opencv_prove/mediapipe/efficientdet_lite0.tflite')
+    base_options = python.BaseOptions(model_asset_path='/home/simone/python/mediapipe/efficientdet_lite0.tflite')
     options = vision.ObjectDetectorOptions(base_options=base_options,
                                        score_threshold=0.5)
     detector = vision.ObjectDetector.create_from_options(options)

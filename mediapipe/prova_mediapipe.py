@@ -31,7 +31,7 @@ def draw_landmarks_on_image(rgb_image, detection_result):
 
 if __name__ == '__main__':
 
-    path: str = r'/home/simone/opencv_prove/mediapipe/foto_persona_di_spalle.jpg'
+    path: str = r'/home/simone/python/mediapipe/foto_persona_di_spalle.jpg'
     image = cv.imread(path,1)
 
     if image is None:
@@ -42,7 +42,7 @@ if __name__ == '__main__':
     cv.imshow(window,image)
     #cv.waitKey(0)
 
-    base_options = python.BaseOptions(model_asset_path='/home/simone/pose_landmarker_lite.task')
+    base_options = python.BaseOptions(model_asset_path='/home/simone/python/mediapipe/pose_landmarker_lite.task')
     options = vision.PoseLandmarkerOptions(
         base_options=base_options,
         output_segmentation_masks=True)
